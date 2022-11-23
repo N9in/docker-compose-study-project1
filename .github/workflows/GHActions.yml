@@ -45,4 +45,3 @@ jobs:
     - name: Print greeting from deploy
       run: echo "Hello from deploy docker-compose-study-project1"
   
-  
