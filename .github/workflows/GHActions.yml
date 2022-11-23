@@ -6,7 +6,7 @@
 
 name: GithubActionsTest
 env:
-  CURRENT_VER: "current--project-ver-is-$(( github.sha ))"
+  CURRENT_VER: "current--project-ver-is-$({ github.sha })"
 
 
 on:  
