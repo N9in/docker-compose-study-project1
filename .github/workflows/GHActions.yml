@@ -6,7 +6,7 @@
 
 name: GithubActionsTest
 env:
-  CURRENT_VER: "current--project-ver-is-$({ github.sha })"
+  CURRENT_VER: "current--project-ver-is-${{ github.sha }}"
 
 
 on:  
@@ -24,7 +24,7 @@ jobs:
       run: echo "Hello from testing docker-compose-study-project1"
       
     - name: Printing versions
-      run: echo $({ env.CURRENT_VER })  
+      run: echo "${{ env.CURRENT_VER }}"  
       
     - name: Mystic tests 
       run: |
