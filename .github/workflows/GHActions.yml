@@ -5,15 +5,11 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 name: GithubActionsTest
-env:
-  CURRENT_VER: "current--project-ver-is-$(( github.sha ))"
-
 
 on:  
   push:
     branches: 
       - master
-      
 jobs: 
   testing:
     
@@ -22,20 +18,8 @@ jobs:
     steps:
     - name: Print greeting from testing
       run: echo "Hello from testing docker-compose-study-project1"
-      
-    - name: Printing versions
-      run: echo "$(( env.CURRENT_VER ))"  
-      
-    - name: Mystic tests 
-      run: |
-        echo "Test1 passed"
-        echo "Test2 passed"
-    - name: Git clone my repo
-      run: actions/checkout@v1
-      
-    - name: List folder
-      run: ls -l
-        
+
+
   depoloy:
   
     runs-on: unbuntu-latest
