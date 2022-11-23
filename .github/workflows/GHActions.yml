@@ -24,12 +24,13 @@ jobs:
       run: echo "Hello from testing docker-compose-study-project1"
       
     - name: Printing versions
-      run: echo "$(( env.CURRENT_VER ))'  
+      run: echo "$(( env.CURRENT_VER ))"  
       
     - name: Mystic tests 
       run: |
         echo "Test1 passed"
         echo "Test2 passed"
+        echo "Test3 passed"
     - name: Git clone my repo
       run: actions/checkout@v1
       
