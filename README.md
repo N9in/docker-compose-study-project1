@@ -18,3 +18,7 @@ $ docker-compose build
 $ docker-compose up
 ```
 
+#### GitHub Actions
+
+Статус:<br>
+<img src="https://github.com/N9in/docker-compose-study-project1/workflows/GithubActionsTest/badge.svg?brach=master"><br>
