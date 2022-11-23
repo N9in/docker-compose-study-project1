@@ -30,7 +30,6 @@ jobs:
       run: |
         echo "Test1 passed"
         echo "Test2 passed"
-        echo "Test3 passed"
     - name: Git clone my repo
       run: actions/checkout@v1
       
