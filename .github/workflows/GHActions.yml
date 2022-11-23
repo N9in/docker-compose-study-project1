@@ -32,7 +32,7 @@ jobs:
         echo "Test2 passed"
         
     - name: Git clone my repo
-      run: actions/checkout@v1
+      uses: actions/checkout@v1
       
     - name: List folder
       run: ls -l
